@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./weather.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <nav>
+        <h3>Weather by VicBox</h3>
+        <div class="nav-list">
+            <a href="#">GitHub</a>
+            <a href="about">About</a>
+        </div>
+    </nav>
+    <section>
+        <div class="add-location-class" id="weather-card1">
+            <div class="add-button" id="add-btn1">
+                <img src="./icons/Vector.svg" alt="" width="50">
+                <h4>Add new Location</h4>
+            </div>
+            <div class="hidden" id="search-div-1">
+                <input type="search" name="search" id="search-input-1">
+                <button type="button" id="search-button-1">Search</button>
+            </div>
+            <div class="hidden" id="weather-1">
+                <div class="top-row">
+                    <img src="/icons/Sunny.svg" alt="weather" class="weather-icon" width="130">
+                    <div class="location">
+                        <h2 id="city"></h2>
+                        <p id="weekday-date"></p>
+                    </div>
+                </div>
+                <div class="middle-row">
+                    <div style="display: flex;">
+                        <p class="celcius" id="celcius"></p><sup class="celcius-symbol" id="celcius-symbol">℃</sup>
+                    </div>
+                    <p class="condition" id="condition"></p>
+                </div>
+                <div class="bot-row">
+                    <div class="bot1"><img src="./icons/visibility.svg" alt="" width="20">
+                        <p id="visibility">Visibility</p>
+                    </div>
+                    <div class="bot2"><img src="./icons/temp.svg" alt="" width="20">
+                        <p id="feelslike"> Feels like</p>
+                    </div>
+                    <div class="bot3"><img src="./icons/humidity.svg" alt="" width="20">
+                        <p id="humidity">Humidity</p>
+                    </div>
+                    <div class="bot4"><img src="./icons/wind.svg" alt="" width="20">
+                        <p id="wind">Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-location-class" id="weather-card2">
+            <div class="add-button" id="add-btn2">
+                <img src="./icons/Vector.svg" alt="" width="50">
+                <h4>Add new Location</h4>
+            </div>
+            <div class="hidden" id="search-div-2">
+                <input type="search" name="search" id="search-input-2">
+                <button type="button" id="search-button-2">Search</button>
+            </div>
+            <div class="hidden" id="weather-2">
+                <div class="top-row">
+                    <img src="./icons/Sunny.svg" alt="weather" class="weather-icon" width="130">
+                    <div class="location">
+                        <h2 id="city2"></h2>
+                        <p id="weekday-date2"></p>
+                    </div>
+                </div>
+                <div class="middle-row">
+                    <div style="display: flex;">
+                        <p class="celcius" id="celcius2"></p><sup class="celcius-symbol" id="celcius-symbol2">℃</sup>
+                    </div>
+                    <p class="condition" id="condition2"></p>
+                </div>
+                <div class="bot-row">
+                    <div class="bot1"><img src="./icons/visibility.svg" alt="" width="20">
+                        <p id="visibility2">Visibility</p>
+                    </div>
+                    <div class="bot2"><img src="./icons/temp.svg" alt="" width="20">
+                        <p id="feelslike2"> Feels like</p>
+                    </div>
+                    <div class="bot3"><img src="./icons/humidity.svg" alt="" width="20">
+                        <p id="humidity2">Humidity</p>
+                    </div>
+                    <div class="bot4"><img src="./icons/wind.svg" alt="" width="20">
+                        <p id="wind2">Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./weather.js"></script>
+</body>
+
+</html>
